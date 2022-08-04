@@ -1,0 +1,114 @@
+$primary-font-color: #261504;
+$primary-background-color: #f9f5f2; // original = ##F7F2ED;
+
+/* 
+  font-family: 'IBM Plex Sans', sans-serif;
+    Regular 400 italic
+    Regular 400
+    Bold 700
+
+  font-family: 'IBM Plex Serif', serif;
+    Light 300 italic
+    Regular 400 italic
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $primary-background-color;
+  color: $primary-font-color;
+
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  font-size: 1.5rem;
+  top: 40%;
+
+  a {
+    color: $primary-font-color;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.project {
+  width: 400px;
+  border-bottom: 1px solid $primary-font-color;
+
+  img {
+    // width: 400px;
+    width: 100%;
+  }
+}
+
+.project__title {
+  font-size: 1.5rem;
+}
+
+.project__subtitle {
+  font-size: 1.125rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+
+  li {
+    display: inline-block;
+  }
+
+  li::after {
+    content: "|";
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  li:last-child::after {
+    content: "";
+  }
+}
+
+.project__link {
+  font-size: 1.125rem;
+}
+
+.about__link {
+  font-size: 1.125rem;
+}
+
+.contact__links {
+  font-size: 1.125rem;
+}
+
+.footer * {
+  font-size: 1rem;
+}
+
+@media (min-height: 680px) {
+}

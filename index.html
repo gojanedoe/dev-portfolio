@@ -6,75 +6,152 @@
     <title>Ash Turner | Developer</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Serif:ital,wght@1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="nav">
       <ul>
-        <li class="nav__item--selected">Work</li>
-        <li>Skills</li>
-        <li>Resume</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li class="nav__item--selected">
+          <a href="#section__projects">Projects</a>
+        </li>
+        <li>
+          <a href="#section__skills">Skills</a>
+        </li>
+        <li><a href="#section__about">Resume</a></li>
+        <li><a href="#section__about">About</a></li>
+        <li><a href="#section__contact">Contact</a></li>
       </ul>
     </nav>
+
     <main>
-      <h1>Hy, my name is Ash Turner.</h1>
+      <h1>Hi, my name is Ash Turner.</h1>
       <p>
         As a
         <span class="intro__highlight">front-end developer and designer</span>,
         I’m passionate about telling stories and creating interactive
         experiences.
       </p>
-      <section class="section__projects">
+
+      <section id="section__projects" class="section__projects">
         <h2>Projects</h2>
-        <a href="#" target="_blank" class="project">
-          <img src="____" alt="____" />
+        <div class="project">
+          <a href="https://gojanedoe.github.io/drawing-app/" target="_blank">
+            <img src="./images/drawthis.jpg" alt="_______" />
+          </a>
           <h3 class="project__title">Photo Generator</h3>
           <ul class="project__subtitle">
-            <li>React.js</li>
-            <li>React Router</li>
-            <li>Bootstrap</li>
-            <li>RegEx</li>
-            <li>Jest</li>
-            <li>Wikimedia Commons API</li>
+            <li>React.js</li
+            ><li>React Router</li
+            ><li>Bootstrap</li
+            ><li>RegEx</li
+            ><li>Jest</li
+            ><li>Wikimedia Commons API</li>
           </ul>
-        </a>
-        <a
-          href="https://yoga-routine-builder.web.app/"
-          target="_blank"
-          class="project"
-        >
-          <img src="____" alt="____" />
+          <a
+            href="https://gojanedoe.github.io/drawing-app/"
+            target="_blank"
+            class="project__link"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/gojanedoe/drawing-app"
+            target="_blank"
+            class="project__link"
+            >View Code</a
+          >
+        </div>
+
+        <div class="project">
+          <a href="https://yoga-routine-builder.web.app/" target="_blank">
+            <!-- ./images/yoga-square.png -->
+            <!-- ./images/yoga.png -->
+            <img src="./images/yoga.png" alt="_______" />
+          </a>
+
           <h3 class="project__title">Yoga Routine Builder</h3>
           <ul class="project__subtitle">
-            <li>React.js</li>
-            <li>Material UI</li>
-            <li>Drag and Drop</li>
-            <li>Firebase</li>
+            <li>React.js</li
+            ><li>Material UI</li
+            ><li>Drag and Drop</li
+            ><li>Firebase</li>
           </ul>
-        </a>
-        <a href="#" target="_blank" class="project">
-          <img src="____" alt="____" />
-          <h3 class="project__title">Yoga Routine Builder</h3>
+          <a
+            href="https://yoga-routine-builder.web.app/"
+            target="_blank"
+            class="project__link"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/gojanedoe/yoga-routine-builder"
+            target="_blank"
+            class="project__link"
+            >View Code</a
+          >
+        </div>
+
+        <div class="project">
+          <a
+            href="https://gojanedoe.github.io/html-me-something/"
+            target="_blank"
+          >
+            <img src="./images/ambrosia.png" alt="______" />
+          </a>
+          <h3 class="project__title">Recipe Website</h3>
           <ul class="project__subtitle">
-            <li>React.js</li>
-            <li>Material UI</li>
-            <li>Drag and Drop</li>
-            <li>Firebase</li>
+            <li>HTML</li
+            ><li>CSS</li
+            ><li>Flexbox</li>
           </ul>
-        </a>
+          <a
+            href="https://gojanedoe.github.io/html-me-something/"
+            target="_blank"
+            class="project__link"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/gojanedoe/html-me-something"
+            target="_blank"
+            class="project__link"
+            >View Code</a
+          >
+        </div>
+
+        <div class="project">
+          <a href="#" target="_blank">
+            <img src="______" alt="______" />
+          </a>
+          <h3 class="project__title">Symmetrical Drawing Tool</h3>
+          <ul class="project__subtitle">
+            <li>HTML</li
+            ><li>CSS</li
+            ><li>jQuery</li>
+          </ul>
+          <a href="#" target="_blank" class="project__link">Live Demo</a>
+          <a
+            href="https://github.com/gojanedoe/mandala-drawer"
+            target="_blank"
+            class="project__link"
+            >View Code</a
+          >
+        </div>
       </section>
-      <section class="section__skills">
+
+      <section id="section__skills" class="section__skills">
         <h2>Skills</h2>
         <h3>Languages</h3>
-        <ul>
+        <ul class="skills__list">
           <li>HTML5 / CSS3</li>
           <li>JavaScript</li>
           <li>TypeScript</li>
           <li>SASS / SCSS</li>
         </ul>
         <h3>Tools</h3>
-        <ul>
+        <ul class="skills__list">
           <li>Git / GitHub</li>
           <li>Jasmine</li>
           <li>Jest</li>
@@ -84,7 +161,7 @@
           <li>Firebase Auth REST API</li>
         </ul>
         <h3>Frameworks & Libraries</h3>
-        <ul>
+        <ul class="skills__list">
           <li>React.js</li>
           <li>Angular</li>
           <li>Bootstrap</li>
@@ -92,7 +169,7 @@
           <li>jQuery</li>
         </ul>
         <h3>Software</h3>
-        <ul>
+        <ul class="skills__list">
           <li>Adobe Photoshop</li>
           <li>Adobe InDesign</li>
           <li>Adobe Illustrator</li>
@@ -103,7 +180,8 @@
           <li>Trello</li>
         </ul>
       </section>
-      <section>
+
+      <section id="section__about" class="section__about">
         <h2>About</h2>
         <p>
           Hi there! My name is Ash. I enjoy creating websites and applications
@@ -121,19 +199,26 @@
           I love to learn, and recently have been trying out Node.js and
           Express.
         </p>
+        <a href="" class="about__link">Link to my resume</a>
       </section>
-      <section>
+
+      <section id="section__contact" class="section__contact">
         <h2>Contact</h2>
         <p>
           You can reach me at ashturner00@gmail.com, or find me elsewhere on the
           web:
         </p>
-        <ul>
+        <ul class="contact__links">
           <li>LinkedIn</li>
           <li>CodePen</li>
           <li>GitHub</li>
         </ul>
       </section>
     </main>
+
+    <footer class="footer">
+      <p>&copy; Ash Turner 2022</p>
+      <p>Site made with HTML, SCSS, & JavaScript</p>
+    </footer>
   </body>
 </html>
