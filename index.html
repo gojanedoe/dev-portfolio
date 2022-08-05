@@ -29,15 +29,15 @@
     </nav>
 
     <main>
-      <h1>Hi, my name is Ash Turner.</h1>
-      <p>
-        As a
-        <span class="intro__highlight">front-end developer and designer</span>,
-        I’m passionate about telling stories and creating interactive
-        experiences.
+      <h1 class="container">Hi, my name is Ash Turner.</h1>
+      <p class="intro__p container wrap">
+        I'm a
+        <span class="intro__highlight">front-end developer</span> and
+        <span class="intro__highlight">designer</span>. I'm passionate about
+        telling stories and creating interactive experiences.
       </p>
 
-      <section id="section__projects" class="section__projects">
+      <section id="section__projects" class="section__projects container">
         <h2>Projects</h2>
         <div class="project">
           <a href="https://gojanedoe.github.io/drawing-app/" target="_blank">
@@ -55,7 +55,7 @@
           <a
             href="https://gojanedoe.github.io/drawing-app/"
             target="_blank"
-            class="project__link"
+            class="project__link project__link--demo"
             >Live Demo</a
           >
           <a
@@ -83,7 +83,7 @@
           <a
             href="https://yoga-routine-builder.web.app/"
             target="_blank"
-            class="project__link"
+            class="project__link project__link--demo"
             >Live Demo</a
           >
           <a
@@ -103,14 +103,14 @@
           </a>
           <h3 class="project__title">Recipe Website</h3>
           <ul class="project__subtitle">
-            <li>HTML</li
-            ><li>CSS</li
-            ><li>Flexbox</li>
+            <li>Flexbox</li
+            ><li>HTML</li
+            ><li>CSS</li>
           </ul>
           <a
             href="https://gojanedoe.github.io/html-me-something/"
             target="_blank"
-            class="project__link"
+            class="project__link project__link--demo"
             >Live Demo</a
           >
           <a
@@ -127,11 +127,13 @@
           </a>
           <h3 class="project__title">Symmetrical Drawing Tool</h3>
           <ul class="project__subtitle">
-            <li>HTML</li
-            ><li>CSS</li
-            ><li>jQuery</li>
+            <li>jQuery</li
+            ><li>HTML</li
+            ><li>CSS</li>
           </ul>
-          <a href="#" target="_blank" class="project__link">Live Demo</a>
+          <a href="#" target="_blank" class="project__link project__link--demo"
+            >Live Demo</a
+          >
           <a
             href="https://github.com/gojanedoe/mandala-drawer"
             target="_blank"
@@ -141,7 +143,7 @@
         </div>
       </section>
 
-      <section id="section__skills" class="section__skills">
+      <section id="section__skills" class="section__skills container">
         <h2>Skills</h2>
         <h3>Languages</h3>
         <ul class="skills__list">
@@ -181,7 +183,7 @@
         </ul>
       </section>
 
-      <section id="section__about" class="section__about">
+      <section id="section__about" class="section__about container wrap">
         <h2>About</h2>
         <p>
           Hi there! My name is Ash. I enjoy creating websites and applications
@@ -194,7 +196,7 @@
           taught programming in Baltimore, including game design and web
           development.
         </p>
-        <p>
+        <p class="about__last-p">
           The main technologies I use are HTML5, CSS3, React.js, and JavaScript.
           I love to learn, and recently have been trying out Node.js and
           Express.
@@ -202,21 +204,21 @@
         <a href="" class="about__link">Link to my resume</a>
       </section>
 
-      <section id="section__contact" class="section__contact">
+      <section id="section__contact" class="section__contact container">
         <h2>Contact</h2>
-        <p>
+        <p class="contact__p wrap">
           You can reach me at ashturner00@gmail.com, or find me elsewhere on the
           web:
         </p>
         <ul class="contact__links">
-          <li>LinkedIn</li>
-          <li>CodePen</li>
-          <li>GitHub</li>
+          <li><a href="">LinkedIn</a></li>
+          <li><a href="">CodePen</a></li>
+          <li><a href="">GitHub</a></li>
         </ul>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
       <p>&copy; Ash Turner 2022</p>
       <p>Site made with HTML, SCSS, & JavaScript</p>
     </footer>
