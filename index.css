@@ -21,12 +21,15 @@ body {
   position: fixed;
   right: 0;
   top: 342px;
+  width: 280px;
   font-size: 1.5rem;
 }
 
 .nav a {
+  display: inline-block;
   color: #261504;
   text-decoration: none;
+  padding: 8px 18px;
 }
 
 .nav ul {
@@ -36,8 +39,6 @@ body {
 .nav li {
   margin-bottom: 58px;
   background-color: transparent;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
 }
 
 .nav .nav__item--selected {
@@ -45,7 +46,6 @@ body {
 }
 
 .nav .nav__item--selected a {
-  display: inline-block;
   color: white;
   padding: 8px 18px;
 }
@@ -76,8 +76,18 @@ p {
   line-height: 2.375rem;
 }
 
-.intro__p {
-  margin-bottom: 90px;
+a {
+  color: #261504;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #888078;
+}
+
+.section__projects {
+  padding-top: 86px;
 }
 
 .project {
@@ -135,6 +145,7 @@ p {
 
 .project__link:hover {
   background-color: #f3e4d9;
+  color: #261504;
 }
 
 .project__link--demo {

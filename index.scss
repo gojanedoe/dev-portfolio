@@ -3,6 +3,7 @@ $primary-bg-color: #f9f5f2; // original = ##F7F2ED;
 $secondary-bg-color: #f2e0d9;
 $nav-highlight: #8d0e0e;
 $button-hover: #f3e4d9; // #efe4dc; // #ffebd8;
+$section-top: 86px;
 $section-bottom: 106px;
 
 html {
@@ -29,6 +30,7 @@ body {
   position: fixed;
   right: 0;
   top: 342px;
+  width: 280px;
 
   // position: sticky;
   // right: 0;
@@ -39,8 +41,10 @@ body {
   // top: 30%;
 
   a {
+    display: inline-block;
     color: $primary-font-color;
     text-decoration: none;
+    padding: 8px 18px;
   }
 
   ul {
@@ -50,15 +54,12 @@ body {
   li {
     margin-bottom: 58px;
     background-color: transparent;
-    transition: background-color 0.3s ease;
   }
 
   .nav__item--selected {
-    // Add red highlighting
     background-color: $nav-highlight;
 
     a {
-      display: inline-block;
       color: white;
       padding: 8px 18px;
     }
@@ -94,8 +95,20 @@ p {
   line-height: 2.375rem;
 }
 
+a {
+  color: $primary-font-color;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #888078; // #7b7167
+  }
+}
+
 .intro__p {
-  margin-bottom: 90px;
+  // margin-bottom: 90px;
+}
+.section__projects {
+  padding-top: $section-top;
 }
 
 .project {
@@ -158,6 +171,7 @@ p {
 
   &:hover {
     background-color: $button-hover;
+    color: $primary-font-color;
   }
 }
 
@@ -167,7 +181,7 @@ p {
 
 .section__skills {
   background-color: $secondary-bg-color;
-  padding-top: 86px;
+  padding-top: $section-top;
 
   h3 {
     margin-bottom: 26px;
@@ -180,7 +194,7 @@ p {
 }
 
 .section__about {
-  padding-top: 86px;
+  padding-top: $section-top;
   padding-bottom: $section-bottom;
 
   p {
@@ -199,7 +213,7 @@ p {
 .section__contact {
   // width: 100%;
   background-color: $secondary-bg-color;
-  padding-top: 86px;
+  padding-top: $section-top;
   padding-bottom: $section-bottom;
 }
 
